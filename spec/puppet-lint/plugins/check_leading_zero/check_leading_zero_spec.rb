@@ -9,6 +9,7 @@ describe 'leading_zero' do
         <<-EOS
         $foo = '010'
         $bar = 10
+        $baz = 0
         EOS
       }
 
@@ -48,6 +49,7 @@ describe 'leading_zero' do
         <<-EOS
         $foo = '010'
         $bar = 10
+        $baz = 0
         EOS
       }
 
