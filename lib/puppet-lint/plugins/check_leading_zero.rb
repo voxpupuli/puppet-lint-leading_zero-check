@@ -1,6 +1,6 @@
 PuppetLint.new_check(:leading_zero) do
   def check
-    tokens.each_with_index do |token, token_idx|
+    tokens.each do |token|
       if token.type == :NUMBER and token.value =~ /^0/
         notify :warning, {
           :message => 'unquoted number with leading zero',
