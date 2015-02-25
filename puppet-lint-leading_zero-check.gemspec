@@ -1,10 +1,10 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-leading_zero-check'
   spec.version     = '0.1.0'
-  spec.homepage    = 'https://github.com/camptocamp/puppet-lint-leading_zero-check'
+  spec.homepage    = 'https://github.com/puppet-community/puppet-lint-leading_zero-check'
   spec.license     = 'Apache-2.0'
-  spec.author      = 'Camptocamp'
-  spec.email       = 'raphael.pinson@camptocamp.com'
+  spec.author      = 'Puppet Community'
+  spec.email       = 'raphael.pinson@puppet-community.com'
   spec.files       = Dir[
     'README.md',
     'LICENSE',
