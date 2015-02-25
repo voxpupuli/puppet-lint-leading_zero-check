@@ -9,6 +9,19 @@ puppet-lint-leading_zero-check
 
 A puppet-lint plugin to check for unquoted numbers with leading zero.
 
+## Installing
+
+### From the command line
+
+```shell
+$ gem install puppet-lint-leading_zero-check
+```
+
+### In a Gemfile
+
+```ruby
+gem 'puppet-lint-leading_zero-check', :require => false
+```
 
 ## Checks
 
