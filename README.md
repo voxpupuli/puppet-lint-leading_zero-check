@@ -5,6 +5,7 @@ puppet-lint-leading_zero-check
 [![Gem Version](https://img.shields.io/gem/v/puppet-lint-leading_zero-check.svg)](https://rubygems.org/gems/puppet-lint-leading_zero-check)
 [![Gem Downloads](https://img.shields.io/gem/dt/puppet-lint-leading_zero-check.svg)](https://rubygems.org/gems/puppet-lint-leading_zero-check)
 [![Coverage Status](https://img.shields.io/coveralls/puppet-community/puppet-lint-leading_zero-check.svg)](https://coveralls.io/r/puppet-community/puppet-lint-leading_zero-check?branch=master)
+[![Gemnasium](https://img.shields.io/gemnasium/puppet-community/puppet-lint-leading_zero-check.svg)](https://gemnasium.com/puppet-community/puppet-lint-leading_zero-check)
 [![Donated by Camptocamp](https://img.shields.io/badge/donated%20by-camptocamp-fb7047.svg)](#transfer-notice)
 
 A puppet-lint plugin to check for unquoted numbers with leading zero.
