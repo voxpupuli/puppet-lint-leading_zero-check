@@ -7,6 +7,7 @@ puppet-lint-leading_zero-check
 [![RubyGem Version](https://img.shields.io/gem/v/puppet-lint-leading_zero-check.svg)](https://rubygems.org/gems/puppet-lint-leading_zero-check)
 [![RubyGem Downloads](https://img.shields.io/gem/dt/puppet-lint-leading_zero-check.svg)](https://rubygems.org/gems/puppet-lint-leading_zero-check)
 [![Donated by Camptocamp](https://img.shields.io/badge/donated%20by-camptocamp-fb7047.svg)](#transfer-notice)
+[![codecov](https://codecov.io/gh/voxpupuli/puppet-lint-leading_zero-check/branch/master/graph/badge.svg)](https://codecov.io/gh/voxpupuli/puppet-lint-leading_zero-check)
 
 A puppet-lint plugin to check for unquoted numbers with leading zero.
 
