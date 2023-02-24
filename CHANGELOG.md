@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/voxpupuli/puppet-lint-leading_zero-check/tree/1.1.0) (2023-02-24)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-lint-leading_zero-check/compare/1.0.0...1.1.0)
+
+**Merged pull requests:**
+
+- puppet-lint: Allow 3.x [\#12](https://github.com/voxpupuli/puppet-lint-leading_zero-check/pull/12) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [1.0.0](https://github.com/voxpupuli/puppet-lint-leading_zero-check/tree/1.0.0) (2021-09-17)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-lint-leading_zero-check/compare/0.1.1...1.0.0)
