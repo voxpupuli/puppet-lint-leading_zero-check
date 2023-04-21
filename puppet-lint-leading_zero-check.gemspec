@@ -11,16 +11,12 @@ Gem::Specification.new do |spec|
     'lib/**/*',
     'spec/**/*',
   ]
-  spec.test_files  = Dir['spec/**/*']
   spec.summary     = 'A puppet-lint plugin to check for unquoted numbers with leading zero.'
   spec.description = <<-EOF
     A puppet-lint plugin to check for unquoted numbers with leading zero.
   EOF
 
-  spec.add_dependency             'puppet-lint', '>= 1.0', '< 4.0'
-  spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rspec-its', '~> 1.0'
-  spec.add_development_dependency 'rspec-collection_matchers', '~> 1.0'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'rake'
+  spec.required_ruby_version = '>= 2.7.0'
+
+  spec.add_dependency 'puppet-lint', '>= 3', '< 5'
 end
