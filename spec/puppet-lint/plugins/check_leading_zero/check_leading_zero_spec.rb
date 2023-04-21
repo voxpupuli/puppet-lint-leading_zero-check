@@ -1,35 +1,35 @@
 require 'spec_helper'
 
 describe 'leading_zero' do
-  let (:msg) { 'unquoted number with leading zero' }
+  let(:msg) { 'unquoted number with leading zero' }
 
   context 'with fix disabled' do
     context 'no unquoted numbers with leading zero' do
-      let (:code) {
+      let(:code) do
         <<-EOS
         $foo = '010'
         $bar = 10
         $baz = 0
         EOS
-      }
+      end
 
-      it 'should not detect any problems' do
+      it 'does not detect any problems' do
         expect(problems).to have(0).problems
       end
     end
 
     context 'unquoted numbers with leading zero' do
-      let (:code) {
+      let(:code) do
         <<-EOS
         $foo = 010
         EOS
-      }
+      end
 
-      it 'should detect a single problem' do
+      it 'detects a single problem' do
         expect(problems).to have(1).problem
       end
 
-      it 'should create a warning' do
+      it 'creates a warning' do
         expect(problems).to contain_warning(msg).on_line(1).in_column(16)
       end
     end
@@ -45,41 +45,41 @@ describe 'leading_zero' do
     end
 
     context 'no unquoted numbers with leading zero' do
-      let (:code) {
+      let(:code) do
         <<-EOS
         $foo = '010'
         $bar = 10
         $baz = 0
         EOS
-      }
+      end
 
-      it 'should not detect any problems' do
+      it 'does not detect any problems' do
         expect(problems).to have(0).problems
       end
 
-      it 'should not modify the manifest' do
+      it 'does not modify the manifest' do
         expect(manifest).to eq(code)
       end
     end
 
     context 'unquoted numbers with leading zero' do
-      let (:code) {
+      let(:code) do
         <<-EOS
         $foo = 010
         EOS
-      }
+      end
 
-      it 'should detect a single problem' do
+      it 'detects a single problem' do
         expect(problems).to have(1).problem
       end
 
-      it 'should fix the problem' do
+      it 'fixes the problem' do
         expect(problems).to contain_fixed(msg).on_line(1).in_column(16)
       end
 
-      it 'should should use undef' do
+      it 'shoulds use undef' do
         expect(manifest).to eq(
-          <<-EOS
+          <<-EOS,
         $foo = '010'
           EOS
         )
